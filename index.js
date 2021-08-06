@@ -19,6 +19,6 @@ app.use(cors());
 app.use('/user', userRoutes);
 app.use('/challenge', challengeRoutes);
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
   console.log('WS RODANDO');
 });
